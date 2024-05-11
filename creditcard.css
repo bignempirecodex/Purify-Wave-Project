@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 2s linear;
+}
+/* The nav bar header */
+header {
+  position: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+/* header logo */
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+/* The header hover style */
+header .navbar a:hover{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: skyblue;
+}
+/* Html style */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+/* Body style */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: floralwhite;
+  .form {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ /* styling for the credit card form */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Montserrat:wght@600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #686868;
+  align-content: center;
+  text-align: center;
+}
+
+.credit-card-form {
+  margin-top: 10%;
+  margin-left: 35%;
+  max-width: 400px;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dbdbdb;
+  text-align: center;
+  color: #424242;
+  align-content: center;
+}
+
+.credit-card-form h2 {
+  margin-bottom: 10%;
+  font-size: 24px;
+}
+
+.credit-card-form .form-group {
+  margin-bottom: 15px;
+
+}
+
+.credit-card-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.credit-card-form input[type="text"],
+.credit-card-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.credit-card-form .form-row {
+  display: flex;
+}
+
+
+.credit-card-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #585858;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.credit-card-form button[type="submit"]:hover {
+  background-color: #808080;
+  color: #424242;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
+}
+
+.credit-card-form button[type="submit"]:focus {
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: white;
+  margin-top: 6%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 70%;
+  text-shadow: 0 0 5px #cacaca; 
+}
+
+.Image1 {
+  margin-top: 0;
+  width: 220px;
+}
+.h2 {
+  margin: 0px;
+}
+/** The styling for the footer **/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+/* footer content style */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* footer section style */
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+/* footer section for the last child */
+.footer-section:last-child {
+    margin-right: 0;
+}
+/* footer section h3  */
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+/* footer section style for a */
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+/* footer section hover style*/
+.footer-section a:hover {
+    color: #ccc;
+}
+/* social media img style */
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/* social media img hover */
+.social-media img:hover {
+    opacity: 0.7;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 12px;
+  box-sizing: border-box;
+}
+

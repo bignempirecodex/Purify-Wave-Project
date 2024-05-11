@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paypal-purify-wave</title>
+  <link rel="stylesheet" href="paypal.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="horseranch-responsive.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <header>
+  <a href="index.html" class="logo" style="color: skyblue;" >Purify wave<span></span></a>
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">Stories</a>
+      <a href="solution.html">Solution</a>
+      <a href="impact.html">Impact</a>
+      <a href="donation.html">Donate</a>
+  </header>
+  <br>
+  <br>
+  <!-- the main paypal content !-->
+  <div class="donate_form">
+    <div class="row">
+      <div class="col-xs-12 tabs">
+        <a href="#monthly" class="btn_styles monthly active">
+          Monthly							
+        </a>
+        <a href="#once" class="btn_styles once">
+          Give Once							
+        </a>
+      </div>
+    </div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="once" style="display: none;">
+      <!-- Identify your business so that you can collect the payments. -->
+      <input type="hidden" name="business" value="mobilelibrary@zaraaina.org">
+      <!-- Specify a Donate button. -->
+      <input type="hidden" name="cmd" value="_donations">
+      <!-- Specify details about the contribution -->
+      <!-- <input type="hidden" name="item_name" value="Friends of the Park">
+                <input type="hidden" name="item_number" value="Fall Cleanup Campaign"> -->
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="charset" value="utf-8">
+
+                <div class="row">
+              <div class="col-xs-12 tabs"> 
+                <a href="" class="btn_styles donate-box" data-value="75">
+                 $75							
+                </a>
+                <a href="" class="btn_styles donate-box active" data-value="50">
+                 $50							
+                </a>
+                <a href="" class="btn_styles donate-box" data-value="25">
+                 $25							
+                </a>
+              </div>
+            </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="description">Select or enter an amount to give. Thank you!</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="body">
+
+            <div class="input">
+              <input type="number" name="amount" value="50">
+              <div class="addition">USD</div>
+            </div>
+            <div class="info">Purify Wave Donation</div>
+            <div class="donate_buttons">
+              <!-- Display the payment button. -->
+              <input type="submit" value="Donate Once" alt="Donate Once" class="btn_styles">
+              <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="monthly">
+      <!-- Identify your business so that you can bill for payments. -->
+      <input type="hidden" name="business" value="mobilelibrary@zaraaina.org">
+      <!-- Specify an Automatic Billing button. -->
+      <input type="hidden" name="cmd" value="_xclick-subscriptions">
+      <!-- Specify details about the automatic billing plan. -->
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="no_shipping" value="1">
+      <input type="hidden" name="src" value="1">
+      <input type="hidden" name="p3" value="1">
+      <input type="hidden" name="t3" value="M">
+      <input type="hidden" name="currency_code" value="USD">
+      <!-- Make sure you get the buyer's address during checkout. -->
+      <input type="hidden" name="no_shipping" value="2">
+      <input type="hidden" name="charset" value="utf-8">
+
+            <div class="row">
+              <div class="col-xs-12 tabs"> 
+                <a href="" class="btn_styles donate-box" data-value="30">
+                 $30							
+                </a>
+                <a href="" class="btn_styles donate-box active" data-value="20">
+                 $20							
+                </a>
+                <a href="" class="btn_styles donate-box" data-value="10">
+                 $10							
+                </a>
+              </div>
+            </div>    
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="description">Select or enter an amount to give per month. Thank you!</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="body">
+
+            <div class="input">
+              <input type="number" name="a3" value="20">
+              <div class="addition">USD / MONTH</div>
+            </div>
+            <div class="info">Purify Wave Donation</div>
+            <div class="donate_buttons">
+              <!-- Display the Automatic Billing button. -->
+              <input type="submit" value="Donate Monthly" alt="Donate Monthly" class="btn_styles">
+              <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script>
+    jQuery(document).ready(function($) { 
+    $('.tabs .btn_styles').click(function() {
+            if(!$(this).hasClass('active')) {
+              let active, parent, tab;
+              active = $(this);
+              parent = $(this).closest('.tabs').first();
+              parent.find('.btn_styles').each(function() {
+                tab = $($(this).attr('href'));
+                if($(this).is(active)) {
+                  $(this).addClass('active');
+                  if(tab.length > 0) tab.show();
+                } else {
+                  $(this).removeClass('active');
+                  if(tab.length > 0) tab.hide();
+                }
+              });
+            }
+
+            return false;
+        });
+      $('.donate_form form .btn_styles').click(function() {
+         let parent = $(this).closest('form').first();
+          parent.find('input[type="number"]').val($(this).data('value'));
+      });
+    });
+  </script>
+ 
+</body>
+</html>

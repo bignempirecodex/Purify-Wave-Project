@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 2s linear;
+}
+/* The nav bar header */
+header {
+  position: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+/* header logo */
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+/* The header hover style */
+header .navbar a:hover{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: skyblue;
+}
+/* Html style */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+/* Body style */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: floralwhite;
+  /* form style */
+  .form {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* container style */
+  .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+  }
+  /* h1 style */
+  h1 {
+      color: #007bff;
+      text-align: center;
+  }
+  /* story style */
+  .story {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+  }
+  /* story paragraph style */
+  .story p {
+      color: #666;
+  }
+  /*story title style*/
+  .story-title {
+      color: #007bff;
+      margin-bottom: 10px;
+  }
+/** The styling for the footer **/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+/* footer content style */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* footer section style */
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+/* footer section for the last child */
+.footer-section:last-child {
+    margin-right: 0;
+}
+/* footer section h3  */
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+/* footer section style for a */
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+/* footer section hover style*/
+.footer-section a:hover {
+    color: #ccc;
+}
+/* social media img style */
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/* social media img hover */
+.social-media img:hover {
+    opacity: 0.7;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 12px;
+  box-sizing: border-box;
+}
+
